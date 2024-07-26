@@ -40,7 +40,6 @@ public class InvestigationParameter extends Parameter implements Serializable {
 	public void preparePersist(String modId, EntityManager manager, GateKeeper gateKeeper, PersistMode persistMode)
 			throws IcatException {
 		super.preparePersist(modId, manager, gateKeeper, persistMode);
-		this.id = null;
 		if (type == null) {
 			throw new IcatException(IcatException.IcatExceptionType.VALIDATION, "Type of parameter is not set");
 		}
